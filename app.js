@@ -9,7 +9,7 @@ const port = 3000
 app.engine('handlebars', exphbs({defaultLayout:'main'}))
 app.set('view engine', 'handlebars')
 
-//setting routes
+//setting routes for get
 
 app.get('/',(req, res)=>{
   res.render('index')
