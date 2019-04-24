@@ -10,7 +10,7 @@ const restaurantList = require('./restaurant.json')
 //setting template engine
 app.engine('handlebars', exphbs({defaultLayout:'main'}))
 app.set('view engine', 'handlebars')
-
+app.use(express.static('public'))
 //setting routes for get
 
 app.get('/',(req, res)=>{
